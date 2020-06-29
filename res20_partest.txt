@@ -1,0 +1,255 @@
+mkdir: cannot create directory ‘/307651’: Permission denied
+
+                            < M A T L A B (R) >
+                  Copyright 1984-2019 The MathWorks, Inc.
+              R2019a Update 4 (9.6.0.1150989) 64-bit (glnxa64)
+                               June 26, 2019
+
+ 
+To get started, type doc.
+For product information, visit www.mathworks.com.
+ 
+>> >> >> >> >> >> >> >> >> >> >> >> >> >> >> >> >> >> >> >> >> >> >> >> >> >> >> >> >> >> >> >> >> >> >> >> >> >> >> >> >> >> >> Starting parallel pool (parpool) using the 'local' profile ...
+[Warning: The system time zone setting, 'US/Eastern', does not specify a single
+time zone unambiguously. It will be treated as 'America/New_York'. See the <a
+href="matlab:doc('datetime.TimeZone')">datetime.TimeZone property</a> for
+details about specifying time zones.] 
+[> In verifyTimeZone (line 34)
+  In datetime (line 543)
+  In parallel.internal.cluster.FileSerializer>iLoadDate (line 342)
+  In parallel.internal.cluster.FileSerializer/getFields (line 100)
+  In parallel.internal.cluster.CJSSupport/getProperties (line 260)
+  In parallel.internal.cluster.CJSSupport/getJobProperties (line 491)
+  In parallel.internal.cluster.CJSJobMixin/hGetProperty (line 108)
+  In parallel.internal.cluster.CJSJobMethods.setJobTerminalStateFromCluster (line 179)
+  In parallel.internal.cluster.CJSJobMixin/hSetTerminalStateFromCluster (line 160)
+  In parallel.cluster.CJSCluster/hGetJobState (line 411)
+  In parallel.internal.cluster.CJSJobMixin/hGetStateEnum (line 144)
+  In parallel.Job/get.StateEnum (line 238)
+  In parallel.Job/get.State (line 230)
+  In parallel.internal.customattr.CustomGetSet>iVectorisedGetHelper (line 128)
+  In parallel.internal.customattr.CustomGetSet>@(a,b,c)iVectorisedGetHelper(obj,a,b,c) (line 102)
+  In parallel.internal.customattr.CustomGetSet/doVectorisedGet (line 103)
+  In parallel.internal.customattr.CustomGetSet/hVectorisedGet (line 76)
+  In parallel.internal.customattr.GetSetImpl>iAccessProperties (line 322)
+  In parallel.internal.customattr.GetSetImpl>iGetAllPropertiesVec (line 264)
+  In parallel.internal.customattr.GetSetImpl.getImpl (line 133)
+  In parallel.internal.customattr.CustomGetSet>iHetFunGetFunction (line 154)
+  In parallel.internal.customattr.CustomGetSet>@(o)iHetFunGetFunction(o,props) (line 139)
+  In parallel.internal.cluster.hetfun (line 46)
+  In parallel.internal.customattr.CustomGetSet>iHetFunGetProperty (line 139)
+  In parallel.internal.customattr.CustomGetSet/get (line 38)
+  In parallel.internal.pool.InteractiveClient/pRemoveOldJobs (line 476)
+  In parallel.internal.pool.InteractiveClient/start (line 317)
+  In parallel.Pool>iStartClient (line 796)
+  In parallel.Pool.hBuildPool (line 585)
+  In parallel.internal.pool.doParpool (line 18)
+  In parpool (line 98)] 
+Connected to the parallel pool (number of workers: 32).
+
+ans = 
+
+ Pool with properties: 
+
+            Connected: true
+           NumWorkers: 32
+              Cluster: local
+        AttachedFiles: {}
+    AutoAddClientPath: true
+          IdleTimeout: 30 minutes (30 minutes remaining)
+          SpmdEnabled: true
+
+>> >> >> >> >> >> Elapsed time is 7916.406998 seconds.
+Elapsed time is 7926.146294 seconds.
+Elapsed time is 7973.418932 seconds.
+Elapsed time is 7977.332516 seconds.
+Elapsed time is 7976.969057 seconds.
+Elapsed time is 7984.184854 seconds.
+Elapsed time is 8005.388693 seconds.
+Elapsed time is 8029.838204 seconds.
+Elapsed time is 8037.487466 seconds.
+Elapsed time is 8040.971877 seconds.
+Elapsed time is 8042.187166 seconds.
+Elapsed time is 8064.032775 seconds.
+Elapsed time is 8078.162826 seconds.
+Elapsed time is 8082.586553 seconds.
+Elapsed time is 8092.478454 seconds.
+Elapsed time is 8092.765969 seconds.
+Elapsed time is 8095.950987 seconds.
+Elapsed time is 8098.410036 seconds.
+Elapsed time is 8114.505114 seconds.
+Elapsed time is 8127.934253 seconds.
+Elapsed time is 8181.149966 seconds.
+Elapsed time is 8186.641819 seconds.
+Elapsed time is 8197.513375 seconds.
+Elapsed time is 8199.801238 seconds.
+Elapsed time is 8239.570913 seconds.
+Elapsed time is 8243.110327 seconds.
+Elapsed time is 8247.435644 seconds.
+Elapsed time is 8253.620092 seconds.
+Elapsed time is 8260.004466 seconds.
+Elapsed time is 8260.420216 seconds.
+Elapsed time is 8296.925324 seconds.
+Elapsed time is 8414.464795 seconds.
+Elapsed time is 8033.633479 seconds.
+Elapsed time is 8051.854858 seconds.
+Elapsed time is 7929.192840 seconds.
+Elapsed time is 8053.984094 seconds.
+Elapsed time is 7959.876058 seconds.
+Elapsed time is 8080.871424 seconds.
+Elapsed time is 8032.749469 seconds.
+Elapsed time is 7969.881926 seconds.
+Elapsed time is 8042.356582 seconds.
+Elapsed time is 8041.238089 seconds.
+Elapsed time is 8096.993634 seconds.
+Elapsed time is 8028.040041 seconds.
+Elapsed time is 8134.013881 seconds.
+Elapsed time is 8054.619370 seconds.
+Elapsed time is 7905.948833 seconds.
+Elapsed time is 8183.612368 seconds.
+Elapsed time is 8098.454947 seconds.
+Elapsed time is 8122.435841 seconds.
+Elapsed time is 8159.021005 seconds.
+Elapsed time is 8079.352367 seconds.
+Elapsed time is 8170.144240 seconds.
+Elapsed time is 8166.178614 seconds.
+Elapsed time is 8053.532301 seconds.
+Elapsed time is 8098.584519 seconds.
+Elapsed time is 8134.941006 seconds.
+Elapsed time is 8202.053543 seconds.
+Elapsed time is 8115.966223 seconds.
+Elapsed time is 7999.694311 seconds.
+Elapsed time is 8225.447277 seconds.
+Elapsed time is 8189.538856 seconds.
+Elapsed time is 8295.310868 seconds.
+Elapsed time is 8266.033905 seconds.
+Elapsed time is 7902.491456 seconds.
+Elapsed time is 7983.286662 seconds.
+Elapsed time is 7905.121919 seconds.
+Elapsed time is 8001.664535 seconds.
+Elapsed time is 7915.270468 seconds.
+Elapsed time is 7928.219653 seconds.
+Elapsed time is 7869.071024 seconds.
+Elapsed time is 7939.769704 seconds.
+Elapsed time is 7972.369832 seconds.
+Elapsed time is 8035.533526 seconds.
+Elapsed time is 7976.950195 seconds.
+Elapsed time is 8000.706001 seconds.
+Elapsed time is 8080.646055 seconds.
+Elapsed time is 8060.921119 seconds.
+Elapsed time is 7976.133782 seconds.
+Elapsed time is 8015.436183 seconds.
+Elapsed time is 8091.069026 seconds.
+Elapsed time is 7946.282891 seconds.
+Elapsed time is 7950.730486 seconds.
+Elapsed time is 7965.474749 seconds.
+Elapsed time is 7910.808392 seconds.
+Elapsed time is 8172.290543 seconds.
+Elapsed time is 8012.160042 seconds.
+Elapsed time is 8164.077558 seconds.
+Elapsed time is 8134.138529 seconds.
+Elapsed time is 8122.766891 seconds.
+Elapsed time is 8122.092874 seconds.
+Elapsed time is 8151.842664 seconds.
+Elapsed time is 8138.899631 seconds.
+Elapsed time is 8199.545587 seconds.
+Elapsed time is 8112.051981 seconds.
+Elapsed time is 8349.565192 seconds.
+Elapsed time is 7867.360042 seconds.
+Elapsed time is 7806.084160 seconds.
+Elapsed time is 7850.711688 seconds.
+Elapsed time is 7913.300257 seconds.
+Elapsed time is 7931.153029 seconds.
+Elapsed time is 7874.964079 seconds.
+Elapsed time is 7938.813738 seconds.
+Elapsed time is 7940.082265 seconds.
+Elapsed time is 7983.078401 seconds.
+Elapsed time is 7953.909193 seconds.
+Elapsed time is 7982.300590 seconds.
+Elapsed time is 7955.759674 seconds.
+Elapsed time is 7976.967561 seconds.
+Elapsed time is 7953.533492 seconds.
+Elapsed time is 8063.746664 seconds.
+Elapsed time is 7952.933029 seconds.
+Elapsed time is 8014.891813 seconds.
+Elapsed time is 7903.358467 seconds.
+Elapsed time is 7966.176465 seconds.
+Elapsed time is 8097.256624 seconds.
+Elapsed time is 7886.042180 seconds.
+Elapsed time is 8214.136162 seconds.
+Elapsed time is 8031.663994 seconds.
+Elapsed time is 8051.118536 seconds.
+Elapsed time is 8086.445806 seconds.
+Elapsed time is 8005.624904 seconds.
+Elapsed time is 8085.375353 seconds.
+Elapsed time is 8105.465643 seconds.
+Elapsed time is 8109.001619 seconds.
+Elapsed time is 8185.336426 seconds.
+Elapsed time is 8226.215054 seconds.
+Elapsed time is 8195.248297 seconds.
+Elapsed time is 7819.042746 seconds.
+Elapsed time is 7830.206917 seconds.
+Elapsed time is 8013.815457 seconds.
+Elapsed time is 7949.601409 seconds.
+Elapsed time is 8006.100554 seconds.
+Elapsed time is 8001.763120 seconds.
+Elapsed time is 7954.223140 seconds.
+Elapsed time is 8133.308289 seconds.
+Elapsed time is 8053.659023 seconds.
+Elapsed time is 7951.944941 seconds.
+Elapsed time is 7851.117919 seconds.
+Elapsed time is 7917.199923 seconds.
+Elapsed time is 7814.600363 seconds.
+Elapsed time is 7956.223797 seconds.
+Elapsed time is 7993.535901 seconds.
+Elapsed time is 8061.769183 seconds.
+Elapsed time is 7991.071008 seconds.
+Elapsed time is 7909.480759 seconds.
+Elapsed time is 7963.726665 seconds.
+Elapsed time is 8043.939754 seconds.
+Elapsed time is 8330.549222 seconds.
+Elapsed time is 7842.404034 seconds.
+Elapsed time is 8122.056155 seconds.
+Elapsed time is 8048.739761 seconds.
+Elapsed time is 7922.017870 seconds.
+Elapsed time is 7992.321496 seconds.
+Elapsed time is 8050.548640 seconds.
+Elapsed time is 7911.502666 seconds.
+Elapsed time is 7899.865299 seconds.
+Elapsed time is 8105.501809 seconds.
+Elapsed time is 8012.122916 seconds.
+Elapsed time is 8220.861760 seconds.
+Elapsed time is 7827.955707 seconds.
+Elapsed time is 7794.987495 seconds.
+Elapsed time is 7764.983956 seconds.
+Elapsed time is 7802.749161 seconds.
+Elapsed time is 8065.834725 seconds.
+Elapsed time is 7864.983556 seconds.
+Elapsed time is 7705.947270 seconds.
+Elapsed time is 7786.663720 seconds.
+Elapsed time is 7814.049739 seconds.
+Elapsed time is 8046.716576 seconds.
+Elapsed time is 7843.248649 seconds.
+Elapsed time is 7766.250298 seconds.
+Elapsed time is 7987.227356 seconds.
+Elapsed time is 7760.431476 seconds.
+Elapsed time is 7981.618569 seconds.
+Elapsed time is 7954.572974 seconds.
+Elapsed time is 8108.434456 seconds.
+Elapsed time is 7766.069057 seconds.
+Elapsed time is 8020.882508 seconds.
+Elapsed time is 8015.034380 seconds.
+Elapsed time is 8136.808406 seconds.
+Elapsed time is 8096.294124 seconds.
+Elapsed time is 7819.332273 seconds.
+Elapsed time is 7750.030494 seconds.
+Elapsed time is 7900.036598 seconds.
+Elapsed time is 7998.725282 seconds.
+Elapsed time is 7960.943458 seconds.
+Elapsed time is 8035.906136 seconds.
+Elapsed time is 8217.767997 seconds.
+Elapsed time is 7586.763424 seconds.
+Elapsed time is 7852.835449 seconds.
+Elapsed time is 7759.338544 seconds.
+>> Elapsed time is 48819.511892 seconds.
+>> >> >> >> >> >> 

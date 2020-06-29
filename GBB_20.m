@@ -2,8 +2,9 @@ clear all
 clc
 
 
+
 %% SETTINGS for generating data
-dim_y = 8; var_u =1;
+dim_y = 20; var_u =1;
 p_s = 0.7; p_ns = 0.3;
 T = 1e3;
 
@@ -29,6 +30,7 @@ C_est = reshape(mu_c, dim_y, dim_y);
 MSE = sum(sum((C-C_est).^2))/dim_x;
 
 
+
 %% Gibbs Sampler
 
 % Settings for Gibbs Bernoulli
@@ -36,19 +38,29 @@ I = 3000;                       % Gibbs iterations
 I0 = 1500;                      % Gibbs burn-in 
 K = 2;                          % Thinning parameter
 A_init = ones(dim_y, dim_y);    % Initial adjacency matrix
-R=2;
-lambda_init = 5;                % Initial prior parameter
-gamma = 2 : 1 : 8;                  % Hyperparameter for degree prior
+R=32;
 
-tic
+parpool(32)
+
+% % SUBMETHOD 2:    Beta Bernoulli Gibbs________________________________________________________________
+
+alpha0 = 1; beta0 = 20:10:70;
+
+tic 
 parfor run = 1:R
     
-    [fs] = in_f(A, I, I0, K, A_init, C_est, mu_x, sig_x, gamma, lambda_init)
-    fs_4(run, :) = fs;
+
+        % Gibbs loop
+        [fs_3] = bb_f(A, I, I0, K, A_init, C, mu_x, sig_x, alpha0, beta0)
+
+
+        % Store fscore
+        f_beta_bernoulli(run, :) = fs_3;
 
 end
 toc
 
-avg_indegree = mean(fs_4, 1);
+avg_bb = mean(f_beta_bernoulli,1);
 
-save('inDeg', 'avg_indegree')
+save('gbb8.mat', 'avg_bb')
+
