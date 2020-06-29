@@ -4,7 +4,7 @@ clc
 
 
 %% SETTINGS for generating data
-dim_y = 8; var_u =1;
+dim_y = 4; var_u =1;
 p_s = 0.7; p_ns = 0.3;
 T = 1e3;
 
@@ -38,19 +38,19 @@ I = 3000;                       % Gibbs iterations
 I0 = 1500;                      % Gibbs burn-in 
 K = 2;                          % Thinning parameter
 A_init = ones(dim_y, dim_y);    % Initial adjacency matrix
-R=8;
+R=2;
 
 
 % % SUBMETHOD 2:    Beta Bernoulli Gibbs________________________________________________________________
 
-alpha0 = 1; beta0 = 20:10:70;
+alpha0 = 1; beta0 = 20:10:30;
 
 tic 
 parfor run = 1:R
     
 
         % Gibbs loop
-        [fs_3] = bb_f(A, I, I0, K, A_init, C, mu_x, sig_x, alpha0, beta0)
+        [fs_3] = bb_f(A, I, I0, K, A_init, C_est, mu_x, sig_x, alpha0, beta0);
 
 
         % Store fscore
